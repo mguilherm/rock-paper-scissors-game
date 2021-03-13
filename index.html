@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+    <title>Pedra, Papel, Tesoura</title>
+  </head>
+  <body>
+    <h1>Desafio Pedra, Papel, Tesoura</h1>
+    <div id="game">
+      <div class="leftCountainer">
+        <div id="camp">
+          <div class="hands">
+            <img
+              id="rock"
+              src="./img/rock.png"
+              alt="Pedra"
+              onclick="toColorImage(this)"
+            />
+            <img
+              id="paper"
+              src="./img/paper.png"
+              alt="Papel"
+              onclick="toColorImage(this)"
+            />
+            <img
+              id="scissors"
+              src="./img/scissors.png"
+              alt="Tesoura"
+              onclick="toColorImage(this)"
+            />
+          </div>
+          <div class="x">x</div>
+          <div class="computerIcon">
+            <img id="pc" src="./img/pc.png" alt="PC" />
+          </div>
+        </div>
+      </div>
+
+      <div class="rightCountainer">
+        <div id="score">
+          <p></p>
+        </div>
+        <div class="button">
+          <button id="startButton" onclick="play()">NOVA PARTIDA</button>
+        </div>
+        <div class="instructions">
+          <h3>INSTRUÇÕES</h3>
+          <p>1 - Selecione Pedra, Papel ou Tesoura para desafiar o PC</p>
+          <p>2 - Clique em NOVA PARTIDA</p>
+          <p>
+            3 - Ao final de 5 vitórias, será declarado o vencedor! Bom jogo! 🍀
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

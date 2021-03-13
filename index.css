@@ -1,0 +1,120 @@
+:root{
+    --title: #011A3C;
+    --background: rgb(51, 51, 51);
+    --camp: #F3F4F6;
+    --contrastColor: #F75C03; 
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--title);
+    border-bottom: 0px;
+}
+
+h1:hover{
+    color: var(--contrastColor)
+}
+
+img {
+    width: 10rem;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+#startButton{
+    height: 3rem;
+    width: 100%;
+    background-color: var(--camp);
+    border: none;
+    font-weight: bold;
+    color: var(--title);
+    font-size: 1.5rem;
+
+ 
+
+}
+
+#startButton:hover{
+    background-color:var(--contrastColor);
+    color: var(--camp);
+    
+}
+
+#score{
+    font-size:  3rem;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--camp);
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    background-color: var(--title);
+}
+
+.hands{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: baseline;
+    justify-content: center;
+
+   
+}
+
+.x{
+    text-align: center;
+    font-size: 8rem;
+    font-weight: medium;
+    color: var(--contrastColor);
+    
+}
+
+.computerIcon{
+    display: flex;
+    justify-content: center;
+}
+
+.rightCountainer {
+    background-color: var(--camp);
+    flex: 1;
+    margin: 15px;
+    height: fit-content;
+    box-shadow: 2px 2px 24px -6px rgba(0,0,0,0.68);    
+    min-height: 600px;
+}
+
+.leftCountainer{
+    background-color: var(--camp);
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 15px;
+    height: fit-content;
+    align-content: center;
+    min-height: 600px;
+    box-shadow: 2px 2px 24px -6px rgba(0,0,0,0.68);           
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 10%;
+
+
+    
+}
+
+.instructions {
+    margin-top: 13rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
